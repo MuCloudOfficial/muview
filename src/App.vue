@@ -44,7 +44,7 @@ onMounted(async () => {
           >
             <FeatherIcon :name="isCollapse ? 'menu' : 'collapse-menu'" aria-label="折叠菜单图标" />
           </el-icon>
-          <p class="mx-5 text-2xl">RS-AnimeLand</p>
+          <p class="mx-5 text-2xl">{{ AppInfo.appName }}</p>
           <div class="top-actions">
             <button
               class="theme-toggle"

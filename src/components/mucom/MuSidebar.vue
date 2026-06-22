@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import {
   Sidebar,
   SidebarContent, SidebarFooter,
@@ -8,12 +7,9 @@ import {
   SidebarGroupLabel, SidebarHeader, SidebarInset,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarProvider, SidebarRail, SidebarTrigger
 } from "@/components/ui/sidebar";
-import {Home, GalleryVerticalEnd, SquareUserRoundIcon} from "@lucide/vue";
+import {GalleryVerticalEnd, SquareUserRoundIcon} from "@lucide/vue";
 import {AppInfo} from "@/main.ts";
 import {MuSidebarMenus} from "@/router/index.ts"
-
-
-
 </script>
 
 <template>

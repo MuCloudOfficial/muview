@@ -1,6 +1,12 @@
 <script setup lang="ts">
 
 import MuSidebar from "@/components/mucom/MuSidebar.vue";
+import {onBeforeMount} from "vue";
+import {AppInfo} from "@/main.ts";
+
+onBeforeMount(async () => {
+  document.title = AppInfo.appName;
+})
 </script>
 
 <template>

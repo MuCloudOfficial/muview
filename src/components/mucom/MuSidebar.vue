@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import {
   Sidebar,
   SidebarContent, SidebarFooter,
@@ -8,12 +7,9 @@ import {
   SidebarGroupLabel, SidebarHeader, SidebarInset,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarProvider, SidebarRail, SidebarTrigger
 } from "@/components/ui/sidebar";
-import {Home, GalleryVerticalEnd, SquareUserRoundIcon} from "@lucide/vue";
+import {GalleryVerticalEnd, SquareUserRoundIcon} from "@lucide/vue";
 import {AppInfo} from "@/main.ts";
 import {MuSidebarMenus} from "@/router/index.ts"
-
-
-
 </script>
 
 <template>
@@ -21,13 +17,15 @@ import {MuSidebarMenus} from "@/router/index.ts"
     <Sidebar collapsible="icon">
       <SidebarHeader>
         <SidebarMenuButton size="lg">
-          <div class="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-            <GalleryVerticalEnd class="size-4" />
-          </div>
-          <div class="grid flex-1 text-left text-sm leading-tight">
-            <span class="truncate font-semibold">{{ AppInfo.appName }}</span>
-            <span class="truncate text-xs">{{ AppInfo.version }}</span>
-          </div>
+          <RouterLink to="/about" class="flex flex-row gap-2">
+            <div class="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
+              <GalleryVerticalEnd class="size-4" />
+            </div>
+            <div class="grid flex-1 text-left text-sm leading-tight">
+              <span class="truncate font-semibold">{{ AppInfo.appName }}</span>
+              <span class="truncate text-xs">{{ AppInfo.version }}</span>
+            </div>
+          </RouterLink>
         </SidebarMenuButton>
       </SidebarHeader>
       <SidebarContent>

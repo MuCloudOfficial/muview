@@ -17,6 +17,11 @@ export const router = createRouter({
       name: 'Home',
       component: () => import('@/views/HomeView.vue'),
     },
+    {
+      path: '/about',
+      name: 'About',
+      component: () => import('@/views/AboutView.vue'),
+    },
   ],
 })
 
@@ -25,10 +30,5 @@ export const MuSidebarMenus = [
     title: "Home",
     url: "/",
     icon: Home,
-  },
-  {
-    title: "About",
-    url: "/about",
-    icon: Info,
   },
 ]

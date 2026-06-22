@@ -1,4 +1,4 @@
-import { get } from '@/api/http'
+import {MuHttpClient} from "@/api/MuCoreConnector.ts"
 
 export type UserRole = 'admin' | 'user' | string
 
@@ -12,7 +12,7 @@ export interface SessionResponse {
   user?: SessionUser
 }
 
-export const fetchSession = () => get<SessionResponse>('/auth/session')
+export const fetchSession = () => MuHttpClient.get<SessionResponse>('/auth/session')
 
 export const canAccessRole = (userRole: UserRole | undefined, requiredRoles?: readonly UserRole[]) => {
   if (!requiredRoles?.length) {

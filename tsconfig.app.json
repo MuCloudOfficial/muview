@@ -6,6 +6,8 @@
       "@/*": ["./src/*"]
     },
     "types": ["vite/client"],
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
 
     /* Linting */
     // "noUnusedLocals": true,
@@ -13,5 +15,6 @@
     // "erasableSyntaxOnly": true,
     // "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts", "src/**/*.vue"],
+
 }

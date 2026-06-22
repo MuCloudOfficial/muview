@@ -3,7 +3,8 @@ import { createPinia } from 'pinia'
 import '@/style.css'
 import App from '@/App.vue'
 import {router} from '@/router'
-import {createI18n} from "vue-i18n";
+import {createI18n} from "vue-i18n"
+import 'overlayscrollbars/overlayscrollbars.css'
 
 // Define App Info to MuView.
 export const AppInfo = {

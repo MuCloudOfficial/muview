@@ -10,6 +10,7 @@ import {
 import {GalleryVerticalEnd, SquareUserRoundIcon} from "@lucide/vue";
 import {AppInfo} from "@/main.ts";
 import {MuSidebarMenus} from "@/router/index.ts"
+import {OverlayScrollbarsComponent} from "overlayscrollbars-vue";
 </script>
 
 <template>
@@ -29,21 +30,25 @@ import {MuSidebarMenus} from "@/router/index.ts"
         </SidebarMenuButton>
       </SidebarHeader>
       <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem v-for="item in MuSidebarMenus" :key="item.title">
-                <SidebarMenuButton as-child>
-                  <RouterLink :to="item.url">
-                    <component :is="item.icon" />
-                    <span>{{ item.title }}</span>
-                  </RouterLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+        <OverlayScrollbarsComponent defer
+                                    :options="{ scrollbars: { autoHide: 'scroll' } }"
+        >
+          <SidebarGroup>
+            <SidebarGroupLabel>Application</SidebarGroupLabel>
+            <SidebarGroupContent>
+              <SidebarMenu>
+                <SidebarMenuItem v-for="item in MuSidebarMenus" :key="item.title">
+                  <SidebarMenuButton as-child>
+                    <RouterLink :to="item.url">
+                      <component :is="item.icon" />
+                      <span>{{ item.title }}</span>
+                    </RouterLink>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        </OverlayScrollbarsComponent>
       </SidebarContent>
       <SidebarFooter> <!-- MuUser Component -->
         <SidebarMenuButton size="lg">

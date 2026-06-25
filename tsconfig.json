@@ -7,7 +7,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@muapi/*": ["./src/api/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@router/*": ["./src/router/*"],
+      "@internalViews/*": ["./src/views/*"],
+      "@mucom/*": ["./src/components/mucom/*"],
+      "@shadcn/*": ["./src/components/ui/*"],
     }
   }
 }

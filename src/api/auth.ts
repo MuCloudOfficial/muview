@@ -1,4 +1,4 @@
-import {MuHttpClient} from "@/api/MuCoreConnector.ts"
+import {MuHttpClient} from "@muapi/MuCoreConnector.ts"
 
 export type UserRole = 'admin' | 'user' | string
 

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { canAccessRole, fetchSession, type UserRole } from '@/api/auth'
+import { canAccessRole, fetchSession, type UserRole } from '@muapi/auth'
 import {Home, Info} from "@lucide/vue";
 
 declare module 'vue-router' {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {AppInfo} from "@/main.ts";
 import {X} from "@lucide/vue"
-import {Card, CardContent} from "@/components/ui/card";
+import {Card, CardContent} from "@shadcn/card";
 
 </script>
 

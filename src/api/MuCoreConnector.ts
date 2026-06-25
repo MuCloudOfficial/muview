@@ -1,7 +1,7 @@
 import axios, {type AxiosInstance, type AxiosRequestConfig} from "axios";
-import {MuPacketReader, MuPacketReadError} from "@/api/mupacket/MuPacketReader.ts";
-import {MuPacketSender} from "@/api/mupacket/MuPacketSender.ts";
-import "@/api/mupacket/MuMsgPacket.ts";
+import {MuPacketReader, MuPacketReadError} from "@muapi/mupacket/MuPacketReader.ts";
+import {MuPacketSender} from "@muapi/mupacket/MuPacketSender.ts";
+import "@muapi/mupacket/MuMsgPacket.ts";
 
 const resolveIncomingPayload = (raw: unknown): unknown => {
     const parsed = MuPacketReader.parseJSON(raw)

@@ -18,7 +18,7 @@
 
 *在此基础之上，它是一个为暮空系列（MK-Series）管理类产品或其他特定产品提供管理类前端实现的项目。*
 
-<a href="/CHANGELOG.MD"><h1>ChangeLog | 更新目录</h1></a>
+<h1><a href="/CHANGELOG.MD">ChangeLog | 更新目录</a></h1>
 
 # Framework | 框架
 

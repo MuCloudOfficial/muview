@@ -9,5 +9,5 @@
 ### V0.2
 
 - [ ] 补全 MuComponents 以解决 Shadcn/Vue 部分组件逻辑过于繁琐问题
-    - [ ] 可以使用 Tailwindcss 实现 ShadcnVue 中没有的 Dashboard 控件
+    - [x] 可以使用 Tailwindcss 实现 ShadcnVue 中没有的 Dashboard 控件
       > 来源：https://tailwindcss.com/docs/mask-image#adding-a-conic-mask  

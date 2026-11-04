@@ -122,7 +122,7 @@ const { menus } = useSidebarMenus()
           <SidebarTrigger class="-ml-1" />
         </div>
       </header>
-      <div class="flex flex-wrap max-h-dvh gap-5 px-5">
+      <div class="flex w-full min-w-0 flex-wrap max-h-dvh gap-5 px-5">
         <slot/>
       </div>
     </SidebarInset>
